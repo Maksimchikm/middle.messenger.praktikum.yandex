@@ -1,0 +1,11 @@
+extends chat.pug
+- var chats = [{mate: '😃', mateName: 'Вадим', lastMessage: `${mateName}: Привет!`, date: 'пт'}, {mate: '😃', mateName: 'Вадим', lastMessage: `${mateName}: Привет!`, date: 'пт'}, {mate: '😃', mateName: 'Вадим', lastMessage: `${mateName}: Привет!`, date: 'пт'}, {mate: '😃', mateName: 'Вадим', lastMessage: `${mateName}: Привет!`, date: 'пт'}, {mate: '😃', mateName: 'Вадим', lastMessage: `${mateName}: Привет!`, date: 'пт'}, {mate: '😃', mateName: 'Вадим', lastMessage: `${mateName}: Привет!`, date: 'пт'}, {mate: '😃', mateName: 'Вадим', lastMessage: `${mateName}: Привет!`, date: 'пт'}, {mate: '😃', mateName: 'Вадим', lastMessage: `${mateName}: Привет!`, date: 'пт'}, {mate: '😃', mateName: 'Вадим', lastMessage: `${mateName}: Привет!`, date: 'пт'},]
+
+block chatList
+  each chat in chats
+    li
+          .mate-chat
+              img (src=chat.mate)
+          p.mate-name chat.mateName
+          p.last-message chat.lastMessage
+          p.date-message chat.date
