@@ -1,0 +1,11 @@
+mixin chatItem(chatPerson)
+    include ../common/avatar/avatar.tmpl.pug
+    +avatar(chatPerson.avatar)
+    .last-message
+        p.last-message__header= chatPerson.name
+        p.last-message__message= chatPerson.lastMessage.text
+        span.last-message__date= chatPerson.lastMessage.date
+        .last-message__readed
+            if chatPerson.notRead
+              span 3
+    hr

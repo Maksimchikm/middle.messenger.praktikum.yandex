@@ -1,0 +1,7 @@
+form.login-form
+    include ../common/input/input.tmpl.pug
+    include ../common/button/button.tmpl.pug
+
+    +inputTemplate('form-input', 'text', 'Логин')
+    +inputTemplate('form-input', 'password', 'Пароль')
+    +button('Войти')(class="form-button")

@@ -1,0 +1,9 @@
+doctype html
+head
+    block head
+body
+    .profile-wrapper
+        include ../components/common/button-arrow/button-arrow.tmpl.pug
+        +buttonWithArrow('back')
+        .container
+            block content
