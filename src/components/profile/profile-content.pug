@@ -1,8 +1,8 @@
 .profile-content
-    include ../common/input/input.tmpl.pug
-    +inputTemplate('profile-input', 'email', 'neo@zion.ru')(class="email")
-    +inputTemplate('profile-input', 'text', 'neo')(class="login")
-    +inputTemplate('profile-input', 'text', 'Томас')(class="first_name")
-    +inputTemplate('profile-input', 'text', 'Андерсон')(class="second_name")
-    +inputTemplate('profile-input', 'text', 'Neo')(class="display_name")
-    +inputTemplate('profile-input', 'phone', '+7 (909) 967 30 30')(class="phone")
+    include profile-field/profile-field.tmpl.pug
+    +profileField({className: 'email', label: 'Почта', input: {placeholder: 'neo@zion.io', type: 'email',}})
+    +profileField({className: 'login', label: 'Логин', input: {placeholder: 'neo', type: 'text',}})
+    +profileField({className: 'first_name', label: 'Имя', input: {placeholder: 'Томас', type: 'text',}})
+    +profileField({className: 'second_name', label: 'Фамилия', input: {placeholder: 'Андерсон', type: 'text',}})
+    +profileField({className: 'display_name', label: 'Ник', input: {placeholder: 'Neo', type: 'text',}})
+    +profileField({className: 'phone', label: 'Телефон', input: {placeholder: '+7 (909) 967 30 30', type: 'phone',}})

@@ -2,14 +2,19 @@
   "name": "middle.messenger.praktikum.yandex",
   "version": "1.0.0",
   "description": "---",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "parcel src/index.pug",
-    "build": "parcel build src/index.pug",
+    "start": "node server.js",
+    "scss": "sass --watch static/styles",
+    "dev": "parcel src/pages/index.pug & npm run scss",
+    "build": "parcel build src/pages/index.pug",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
     "node": ">=12"
+  },
+  "alias": {
+    "root": "./"
   },
   "repository": {
     "type": "git",

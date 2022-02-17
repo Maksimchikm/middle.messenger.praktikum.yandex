@@ -1,0 +1,5 @@
+mixin profileField(field)
+    div(class=`${field.className} profile-input__container`)
+        label= field.label
+        include ../../common/input/input.tmpl.pug
+        +inputTemplate("profile-input", field.input.type, field.input.placeholder)

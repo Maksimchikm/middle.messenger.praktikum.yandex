@@ -1,0 +1,19 @@
+.profile-input__container {
+  width: 100%;
+  border-bottom: 1px solid #EAEAEA;
+  position: relative;
+  font-weight: 600;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+
+  .profile-input {
+    text-align: right;
+  }
+
+  label {
+    text-align: left;
+  }
+
+}

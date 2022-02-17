@@ -1,0 +1,21 @@
+.error-container {
+  font-family: Nunito, sans-serif;
+  text-align: center;
+}
+.error-container h1 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+.error-container p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 70px;
+}
+.error-container a {
+  font-size: 11px;
+  font-weight: bold;
+  color: #24B589;
+}
+
+/*# sourceMappingURL=errors.css.map */

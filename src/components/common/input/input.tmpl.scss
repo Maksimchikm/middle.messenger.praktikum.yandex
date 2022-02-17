@@ -1,15 +1,34 @@
 // Стили для инпутов в формах логина и регистрации
-//.form-input {
-//  position: relative;
-//  width: 280px;
-//  margin: 0 auto 30px;
-//  font-family: 'Nunito', sans-serif;
-//  font-size: 13px;
-//  font-weight: 600;
-//  color: #999999;
-//
-//
-//
+
+.form-input__container {
+  position: relative;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 600;
+
+  .form-input {
+    width: 100%;
+    margin-bottom: 30px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #24B589;
+    color: #1E1E1E;
+  }
+
+  label {
+    color: #999999;
+    position: absolute;
+    transition: all 200ms;
+    left: 0;
+  }
+
+  .form-input:focus + label,
+  .form-input:not(:placeholder-shown) + label{
+    top: -10px;
+    left: 1px;
+    font-size: 9px;
+  }
+}
+
 //  &:focus + label,
 //  &:not(:placeholder-shown) + label {
 //    top: -10px;
@@ -19,11 +38,7 @@
 //  }
 //}
 // Стили для инпутов в настройках профиля
-.profile-input {
-  width: 500px;
-  input {
-    border-bottom: 1px solid #EAEAEA;
-  }
-}
+
+
 //.message
 //.search-menu

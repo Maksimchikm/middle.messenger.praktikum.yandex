@@ -1,7 +1,17 @@
 mixin message(message)
-    div(class=`${message.className}`)
-        .message__content
-            p= message.content
+    if (message.className === 'received')
+        div(class=`${message.className} message-content`)
             if message.isImg
                 img(src=`${message.img.path}` alt=`${message.img.alt}`)
-        span.message__date= message.date
+                span.message-date__img= message.date
+            else
+                p= message.content
+                span.message-date= message.date
+    else if (message.className === 'sent')
+        div(class=`${message.className} message-content`)
+            if message.isImg
+                img(src=`${message.img.path}` alt=`${message.img.alt}`)
+                span.message-date__img= message.date
+            else
+                p= message.content
+                span.message-date= message.date

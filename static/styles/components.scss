@@ -1,5 +1,6 @@
-@import './src/components/chat-menu/chat-menu.scss';
-@import './src/components/chat/chat.scss';
-@import './src/components/login/login.scss';
-@import './src/components/register/register.scss';
-@import './src/components/profile/profile.scss';
+@import '../../src/components/chat-menu/chat-menu';
+@import '../../src/components/chat-menu/chat-item.tmpl/chat-item.tmpl';
+@import '../../src/components/chat/chat';
+@import '../../src/components/login/login';
+@import '../../src/components/register/register';
+@import '../../src/components/profile/profile';

@@ -1,12 +1,12 @@
-form.login-form
+form.regidter-form
     include ../common/input/input.tmpl.pug
     include ../common/button/button.tmpl.pug
-
-    +inputTemplate('form-input', 'email', 'Почта')
-    +inputTemplate('form-input', 'text', 'Логин')
-    +inputTemplate('form-input', 'text', 'Имя')
-    +inputTemplate('form-input', 'text', 'Фамилия')
-    +inputTemplate('form-input', 'phone', 'Телефон')
-    +inputTemplate('form-input', 'password', 'Пароль')
-    +inputTemplate('form-input', 'password', 'Пароль (ещё раз)')
+    .register-form__fields
+        +inputTemplate('form-input', 'email', 'Почта')
+        +inputTemplate('form-input', 'text', 'Логин')
+        +inputTemplate('form-input', 'text', 'Имя')
+        +inputTemplate('form-input', 'text', 'Фамилия')
+        +inputTemplate('form-input', 'phone', 'Телефон')
+        +inputTemplate('form-input', 'password', 'Пароль')
+        +inputTemplate('form-input', 'password', 'Пароль (ещё раз)')
     +button('Зарегистрироваться')(class="form-button")

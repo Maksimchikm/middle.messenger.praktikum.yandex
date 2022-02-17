@@ -1,0 +1,61 @@
+@import './profile-field/profile-field.tmpl.scss';
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  width: 510px;
+  margin: 0 auto;
+  font-family: Nunito, sans-serif;
+
+  .profile-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 65px;
+
+    img {
+      width: 130px;
+      height: 130px;
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      font-weight: bold;
+      font-size: 16px;
+      text-align: center;
+      color: #1E1E1E;
+    }
+  }
+
+  .profile-content {
+    width: 510px;
+    margin: 0 auto 65px;
+
+    :last-child {
+      border: none;
+    }
+  }
+
+  .profile-footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    a {
+      border-bottom: 1px solid #EAEAEA;
+      color: #24B589;
+      font-weight: 600;
+      font-size: 13px;
+      padding: 12px 0;
+    }
+
+    :last-child {
+      border: none;
+      color: #FF0000;
+    }
+  }
+}
+
