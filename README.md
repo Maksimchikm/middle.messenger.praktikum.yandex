@@ -20,3 +20,4 @@
 ### Ссылки необходимые для сдачи проекта:
      - Макет страниц в Figma: https://www.figma.com/file/JcIvUCN7p7coz7HbFH0T4b/Chat-(Copy)?node-id=0%3A1
      - Ссылка на домен Netlify: https://zen-cori-d56f52.netlify.app/
+     - Ссылка на Pull Request: https://github.com/Maksimchikm/middle.messenger.praktikum.yandex/pull/1
