@@ -1,0 +1,8 @@
+extends ../pages/index.pug
+
+block wrapper
+    .profile-wrapper
+        include ../components/common/button-arrow/button-arrow.tmpl.pug
+        +buttonWithArrow('back')
+        .profile-container
+            block content

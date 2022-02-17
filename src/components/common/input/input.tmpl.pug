@@ -1,0 +1,9 @@
+mixin inputTemplate(className, type, placeholder)
+    if (className === 'profile-input')
+        input(class=`${className}`, type=`${type}`, placeholder=`${placeholder}`)
+    else if (className == 'form-input')
+        .form-input__container
+            input(class=`${className}`, type=`${type}`, placeholder=' ')
+            label= placeholder
+    else
+        input(class=`${className}`, type=`${type}`, placeholder=`${placeholder}`)

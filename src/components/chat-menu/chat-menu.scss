@@ -1,0 +1,77 @@
+.sidebar {
+  width: 310px;
+  height: 100%;
+  margin: 0;
+  padding: 5px 0;
+  position: fixed;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FBFBFB;
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+
+  .menu {
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .menu-header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .menu-header__link a {
+      position: relative;
+      font-family: Inter, sans-serif;
+      color: #999999;
+      padding-right: 10px;
+
+      &:after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 1.5px;
+        height: 8px;
+        background-color: #999999;
+        transform: rotate(135deg);
+        top: 2px;
+        right: 0;
+      }
+
+      &:before {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 1.5px;
+        height: 8px;
+        background-color: #999999;
+        transform: rotate(-135deg);
+        top: 6.5px;
+        right: 0;
+      }
+    }
+
+    .menu_search {
+      width: 100%;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #EAEAEA;
+
+      .search-menu {
+        position: relative;
+        font-family: Inter, sans-serif;
+        text-align: center;
+        width: 100%;
+        height: 32px;
+        border-radius: 5px;
+        background-color: #EFEFEF;
+      }
+    }
+  }
+}

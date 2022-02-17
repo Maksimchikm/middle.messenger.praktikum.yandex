@@ -1,0 +1,68 @@
+.arrow {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  background-color: #24B589;
+  border-radius: 50%;
+
+  span {
+    display: inline-block;
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 11px;
+    height: 1.6px;
+    top: 12.4px;
+    left: 8.5px;
+  }
+}
+
+.back {
+  &:after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 1.6px;
+    height: 8.8px;
+    background-color: #FFFFFF;
+    transform: rotate(45deg);
+    top: 6.2px;
+    left: 10px;
+  }
+  &:before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 1.6px;
+    height: 8.8px;
+    background-color: #FFFFFF;
+    transform: rotate(-45deg);
+    top: 11.3px;
+    left: 10px;
+  }
+}
+
+.send {
+  &:after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 1.6px;
+    height: 8.8px;
+    background-color: #FFFFFF;
+    transform: rotate(135deg);
+    top: 6.2px;
+    left: 17px;
+  }
+  &:before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 1.6px;
+    height: 8.8px;
+    background-color: #FFFFFF;
+    transform: rotate(-135deg);
+    top: 11.3px;
+    left: 17px;
+  }
+}
+
