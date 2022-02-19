@@ -1,5 +1,6 @@
 @import 'null.css';
 @import 'fonts.css';
+@import 'vars.scss';
 @import 'modules.scss';
 @import 'components.scss';
 @import 'errors.scss';
@@ -11,7 +12,7 @@ body {
 }
 
 a {
-  color: #24B589;
+  color: $green;
   text-decoration: none;
 }
 

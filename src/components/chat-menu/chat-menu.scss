@@ -27,10 +27,10 @@
       margin-bottom: 10px;
     }
 
-    .menu-header__link a {
+    .menu-header__link-link {
       position: relative;
       font-family: Inter, sans-serif;
-      color: #999999;
+      color: $gray;
       padding-right: 10px;
 
       &:after {
@@ -39,7 +39,7 @@
         display: block;
         width: 1.5px;
         height: 8px;
-        background-color: #999999;
+        background-color: $gray;
         transform: rotate(135deg);
         top: 2px;
         right: 0;
@@ -51,7 +51,7 @@
         display: block;
         width: 1.5px;
         height: 8px;
-        background-color: #999999;
+        background-color: $gray;
         transform: rotate(-135deg);
         top: 6.5px;
         right: 0;
@@ -61,7 +61,7 @@
     .menu_search {
       width: 100%;
       padding-bottom: 10px;
-      border-bottom: 1px solid #EAEAEA;
+      border-bottom: 1px solid $gray-light;
 
       .search-menu {
         position: relative;
@@ -70,7 +70,7 @@
         width: 100%;
         height: 32px;
         border-radius: 5px;
-        background-color: #EFEFEF;
+        background-color: $message-bcg;
       }
     }
   }

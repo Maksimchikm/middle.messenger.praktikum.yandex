@@ -94,7 +94,7 @@
   margin-bottom: 30px;
   padding-bottom: 8px;
   border-bottom: 1px solid #24B589;
-  color: #1E1E1E;
+  color: ##1E1E1E;
 }
 .form-input__container label {
   color: #999999;
@@ -248,7 +248,7 @@
 .wrapper-chat .chat-header .chat-header__avatar span {
   font-size: 13px;
   font-weight: 800;
-  color: #1E1E1E;
+  color: ##1E1E1E;
   margin-left: 10px;
 }
 .wrapper-chat .chat-header .chat-header__menu:after {
@@ -286,7 +286,7 @@
   font-size: 12px;
   font-weight: 600;
   line-height: 15px;
-  color: #1E1E1E;
+  color: ##1E1E1E;
 }
 .wrapper-chat .chat-content .chat-content__messages .received {
   position: relative;
@@ -376,7 +376,7 @@
   font-weight: 800;
   font-size: 20px;
   text-align: center;
-  color: #1E1E1E;
+  color: ##1E1E1E;
   margin-bottom: 60px;
 }
 .login-container .login-form {
@@ -412,7 +412,7 @@
   font-weight: 800;
   font-size: 20px;
   text-align: center;
-  color: #1E1E1E;
+  color: ##1E1E1E;
   margin-bottom: 60px;
 }
 .register-container .register-form {
@@ -475,7 +475,7 @@
   font-weight: bold;
   font-size: 16px;
   text-align: center;
-  color: #1E1E1E;
+  color: ##1E1E1E;
 }
 .profile-container .profile-content {
   width: 510px;

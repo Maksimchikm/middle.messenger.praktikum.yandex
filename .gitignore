@@ -1,3 +1,6 @@
 dist/
 .github
+.cache
+.idea
 node_modules
+*.css.map
