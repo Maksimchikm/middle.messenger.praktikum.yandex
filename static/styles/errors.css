@@ -1,21 +1,17 @@
-.error-container {
-  font-family: Nunito, sans-serif;
-  text-align: center;
-}
-.error-container h1 {
-  font-size: 40px;
-  font-weight: 800;
-  margin-bottom: 30px;
-}
-.error-container p {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 70px;
-}
-.error-container a {
-  font-size: 11px;
-  font-weight: bold;
-  color: #24B589;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 20 |     color: $green;
+ *    |            ^^^^^^
+ *    '
+ *   static/styles/errors.scss 20:12  root stylesheet */
 
-/*# sourceMappingURL=errors.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 20 \2502      color: $green;\a    \2502             ^^^^^^\a    \2575 \a   static/styles/errors.scss 20:12  root stylesheet";
+}

@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import 'null.css';
-@import 'fonts.css';
+@import './null.css';
+@import './fonts.css';
 .avatar {
   width: 47px;
   height: 47px;
@@ -94,7 +94,7 @@
   margin-bottom: 30px;
   padding-bottom: 8px;
   border-bottom: 1px solid #24B589;
-  color: ##1E1E1E;
+  color: #1E1E1E;
 }
 .form-input__container label {
   color: #999999;
@@ -137,13 +137,13 @@
   align-items: center;
   margin-bottom: 10px;
 }
-.sidebar .menu .menu-header__link a {
+.sidebar .menu .menu-header__link-link {
   position: relative;
   font-family: Inter, sans-serif;
   color: #999999;
   padding-right: 10px;
 }
-.sidebar .menu .menu-header__link a:after {
+.sidebar .menu .menu-header__link-link:after {
   position: absolute;
   content: "";
   display: block;
@@ -154,7 +154,7 @@
   top: 2px;
   right: 0;
 }
-.sidebar .menu .menu-header__link a:before {
+.sidebar .menu .menu-header__link-link:before {
   position: absolute;
   content: "";
   display: block;
@@ -187,27 +187,30 @@
   padding: 10px 0;
   border-bottom: 1px solid #EAEAEA;
 }
-.chat-item .last-message {
+
+.last-message {
   flex: 2 2 auto;
   margin-left: 10px;
   max-width: 185px;
 }
-.chat-item .last-message .last-message__header {
+
+.last-message__header {
   font-size: 13px;
   font-weight: bold;
   margin-bottom: 10px;
 }
-.chat-item .last-message__info {
+
+.last-message__info {
   position: relative;
 }
-.chat-item .last-message__info .last-message__date {
+.last-message__info .last-message__date {
   position: absolute;
   right: 0;
   display: inline-block;
   white-space: nowrap;
   font-size: 9px;
 }
-.chat-item .last-message__info .last-message__read {
+.last-message__info .last-message__read {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -248,7 +251,7 @@
 .wrapper-chat .chat-header .chat-header__avatar span {
   font-size: 13px;
   font-weight: 800;
-  color: ##1E1E1E;
+  color: #1E1E1E;
   margin-left: 10px;
 }
 .wrapper-chat .chat-header .chat-header__menu:after {
@@ -263,7 +266,7 @@
   border-bottom: 1px solid #EAEAEA;
   margin-bottom: 10px;
 }
-.wrapper-chat .chat-content .chat-content__date {
+.wrapper-chat .chat-content .chat-content__time {
   align-self: center;
   font-size: 12px;
   color: #999999;
@@ -286,7 +289,7 @@
   font-size: 12px;
   font-weight: 600;
   line-height: 15px;
-  color: ##1E1E1E;
+  color: #1E1E1E;
 }
 .wrapper-chat .chat-content .chat-content__messages .received {
   position: relative;
@@ -307,7 +310,7 @@
   font-size: 9px;
   color: #999999;
 }
-.wrapper-chat .chat-content .chat-content__messages .received .message-date__img {
+.wrapper-chat .chat-content .chat-content__messages .received .message-time__img {
   position: absolute;
   right: 10px;
   bottom: 10px;
@@ -335,7 +338,7 @@
   font-size: 9px;
   color: #24B589;
 }
-.wrapper-chat .chat-content .chat-content__messages .sent .message-date__img {
+.wrapper-chat .chat-content .chat-content__messages .sent .message-time__img {
   position: absolute;
   right: 99px;
   bottom: 10px;
@@ -376,7 +379,7 @@
   font-weight: 800;
   font-size: 20px;
   text-align: center;
-  color: ##1E1E1E;
+  color: #1E1E1E;
   margin-bottom: 60px;
 }
 .login-container .login-form {
@@ -412,7 +415,7 @@
   font-weight: 800;
   font-size: 20px;
   text-align: center;
-  color: ##1E1E1E;
+  color: #1E1E1E;
   margin-bottom: 60px;
 }
 .register-container .register-form {
@@ -475,7 +478,7 @@
   font-weight: bold;
   font-size: 16px;
   text-align: center;
-  color: ##1E1E1E;
+  color: #1E1E1E;
 }
 .profile-container .profile-content {
   width: 510px;

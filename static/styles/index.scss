@@ -1,9 +1,9 @@
-@import 'null.css';
-@import 'fonts.css';
-@import 'vars.scss';
-@import 'modules.scss';
-@import 'components.scss';
-@import 'errors.scss';
+@import './vars.scss';
+@import './null.css';
+@import './fonts.css';
+@import './modules.scss';
+@import './components.scss';
+@import './errors.scss';
 
 body {
   font-family: Nunito sans-serif;

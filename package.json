@@ -8,7 +8,7 @@
     "scss": "sass --watch static/styles",
     "dev": "parcel src/pages/index.pug & npm run scss",
     "clean": "rm -rf dist/*",
-    "build": "npm run clean && parcel build src/pages/index.pug",
+    "build": "npm run clean && parcel build --no-minify src/pages/index.pug ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
