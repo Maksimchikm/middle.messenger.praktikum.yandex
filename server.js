@@ -31,17 +31,6 @@ app.get('/', (req, res) => {
 	res.render('index');
 });
 
-	// Заготовка на будущее
-	// .use('/', (err, req, res) => {
-	// 	console.error(err.stack)
-	// 	res.status(404).render('404');
-	// })
-	// .use('/', (err, req, res) => {
-	// 	console.error(err.stack)
-	// 	res.status(500).render('500');
-	// })
-
-
 app.listen(PORT, () => {
 	console.log(`Приложение запущено на ${PORT} порту`);
 })

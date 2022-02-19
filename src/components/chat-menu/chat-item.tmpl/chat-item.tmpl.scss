@@ -3,44 +3,44 @@
   width: 100%;
   height: 67px;
   padding: 10px 0;
-  border-bottom: 1px solid #EAEAEA;
+  border-bottom: 1px solid $gray-light;
+}
 
-  .last-message {
-    flex: 2 2 auto;
-    margin-left: 10px;
-    max-width: 185px;
+.last-message {
+  flex: 2 2 auto;
+  margin-left: 10px;
+  max-width: 185px;
+}
 
-    .last-message__header {
-      font-size: 13px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
+.last-message__header {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.last-message__info {
+  position: relative;
+
+  .last-message__date {
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 9px;
   }
 
-  .last-message__info {
-    position: relative;
-
-    .last-message__date {
-      position: absolute;
-      right: 0;
-      display: inline-block;
-      white-space: nowrap;
-      font-size: 9px;
-    }
-
-    .last-message__read {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      width: 20px;
-      height: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 50%;
-      background-color: #24B589;
-      color: #FFFFFF;
-      font-size: 11px;
-    }
+  .last-message__read {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: $green;
+    color: #FFFFFF;
+    font-size: 11px;
   }
 }

@@ -10,8 +10,8 @@
     width: 100%;
     margin-bottom: 30px;
     padding-bottom: 8px;
-    border-bottom: 1px solid #24B589;
-    color: #1E1E1E;
+    border-bottom: 1px solid $green;
+    color: $black;
   }
 
   label {
@@ -28,17 +28,3 @@
     font-size: 9px;
   }
 }
-
-//  &:focus + label,
-//  &:not(:placeholder-shown) + label {
-//    top: -10px;
-//    left: 10px;
-//    font-size: 11px;
-//    padding: 2px 10px;
-//  }
-//}
-// Стили для инпутов в настройках профиля
-
-
-//.message
-//.search-menu

@@ -3,15 +3,15 @@ mixin message(message)
         div(class=`${message.className} message-content`)
             if message.isImg
                 img(src=`${message.img.path}` alt=`${message.img.alt}`)
-                span.message-date__img= message.date
+                span.message-time__img= message.time
             else
                 p= message.content
-                span.message-date= message.date
+                span.message-time= message.time
     else if (message.className === 'sent')
         div(class=`${message.className} message-content`)
             if message.isImg
                 img(src=`${message.img.path}` alt=`${message.img.alt}`)
-                span.message-date__img= message.date
+                span.message-time__img= message.time
             else
                 p= message.content
-                span.message-date= message.date
+                span.message-time= message.time
