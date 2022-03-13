@@ -1,5 +1,6 @@
 .github
-.cache
+.cache/
+.parcel-chache/
 .idea
 node_modules
 *.css.map

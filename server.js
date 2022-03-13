@@ -4,31 +4,28 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.set('views', path.join(__dirname, 'src/pages'));
-app.set('view engine', 'pug');
-
-app.use(express.static(__dirname + '/static'));
+app.use(express.static(__dirname + '/dist'));
 
 app.get('/messenger', (req, res) => {
-	res.render('messenger')
+	res.sendFile(`/messenger.html`, {root: __dirname + `/dist`,});
 });
 app.get('/login', (req, res) => {
-	res.render('login')
+	res.sendFile(`/login.html`, {root: __dirname + `/dist`,});
 });
 app.get('/register', (req, res) => {
-	res.render('register')
+	res.sendFile(`/register.html`, {root: __dirname + `/dist`,});
 });
 app.get('/profile', (req, res) => {
-	res.render('profile')
+	res.sendFile(`/profile.html`, {root: __dirname + `/dist`,});
 });
 app.get('/404', (req, res) => {
-	res.render('404')
+	res.sendFile(`/404.html`, {root: __dirname + `/dist`,});
 });
 app.get('/500', (req, res) => {
-	res.render('500')
+	res.sendFile(`/500.html`, {root: __dirname + `/dist`,});
 });
 app.get('/', (req, res) => {
-	res.render('index');
+	res.sendFile(`/index.html`, {root: __dirname + `/dist`,});
 });
 
 app.listen(PORT, () => {
